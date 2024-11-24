@@ -36,6 +36,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f9f9f9;
+            flex-wrap: wrap; /* Küçük ekranlarda alt alta yerleşim */
         }
 
         section h2 {
@@ -51,12 +52,14 @@
 
         .text-container {
             flex: 1;
+            min-width: 300px; /* Küçük ekranlar için minimum genişlik */
         }
 
         .image-container {
             flex: 1;
             display: flex;
             justify-content: center;
+            min-width: 300px; /* Küçük ekranlar için minimum genişlik */
         }
 
         .image-container img {
@@ -79,6 +82,18 @@
             background-color: #333;
             color: #fff;
             padding: 15px 0;
+        }
+
+        /* Responsive Düzenleme */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column; /* Küçük ekranlarda dikey yerleşim */
+                text-align: center;
+            }
+
+            .text-container, .image-container {
+                min-width: 100%;
+            }
         }
     </style>
 </head>
@@ -105,7 +120,7 @@
         <p><strong>Email:</strong>mioptiklens@gmail.com</p>
     </div>
     <div class="image-container">
-        <img src="magaza2.jpeg" width="200" height="200"  alt="Mağaza Görseli 2">
+        <img src="magaza2.jpeg" width="200" height="200" alt="Mağaza Görseli 2">
     </div>
 </section>
 
@@ -117,7 +132,7 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.070528820863!2d28.858247876817998!3d41.00182947135132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb4cc3899d87%3A0x1f2a1a29f2113304!2zQmFow6dlbGlldmxlciwgRmV2emkgw4dha21hayBDZC4gTm86MzAgRDpiLCAzNDE4MCBCYWjDp2VsaWV2bGVyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1732459947112!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="image-container">
-        <img src="magaza3.jpeg" width="200" height="200"  alt="Mağaza Görseli 3">
+        <img src="magaza3.jpeg" width="200" height="200" alt="Mağaza Görseli 3">
     </div>
 </section>
 
