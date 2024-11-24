@@ -27,13 +27,15 @@
         }
 
         section {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f9f9f9;
-            text-align: center;
         }
 
         section h2 {
@@ -47,16 +49,19 @@
             font-size: 16px;
         }
 
+        .text-container {
+            flex: 1;
+        }
+
         .image-container {
-            margin-top: 20px;
+            flex: 1;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
         }
 
         .image-container img {
-            max-width: 200px;
+            max-width: 100%;
+            height: auto;
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -84,35 +89,40 @@
 </header>
 
 <section id="about">
-    <h2>Hakkımızda</h2>
-    <p>2001 yılından bu yana perakende sektöründe çeşitli alanlarda faaliyet gösteren ve elde ettiği başarılarla fark yaratan Mİ Optik’in kurucusu Optisyen Murat Bakır olarak, sizleri Mİ Optik’in ayrıcalıklı dünyasına davet ediyoruz. Mağazamızda sizleri, profesyonel ve deneyimli bir ekip karşılayacak. Geniş ürün yelpazemizle hizmet verirken, samimi bir ortamda rahat ve keyifli bir alışveriş deneyimi sunmayı hedefliyoruz. Uzmanlığımız ve yıllara dayanan tecrübemizle sizlere en iyi hizmeti sağlamak için buradayız.</p>
+    <div class="text-container">
+        <h2>Hakkımızda</h2>
+        <p>2001 yılından bu yana perakende sektöründe çeşitli alanlarda faaliyet gösteren ve elde ettiği başarılarla fark yaratan Mİ Optik’in kurucusu Optisyen Murat Bakır olarak, sizleri Mİ Optik’in ayrıcalıklı dünyasına davet ediyoruz. Mağazamızda sizleri, profesyonel ve deneyimli bir ekip karşılayacak. Geniş ürün yelpazemizle hizmet verirken, samimi bir ortamda rahat ve keyifli bir alışveriş deneyimi sunmayı hedefliyoruz. Uzmanlığımız ve yıllara dayanan tecrübemizle sizlere en iyi hizmeti sağlamak için buradayız.</p>
+    </div>
     <div class="image-container">
-        <img src="mioptik_magaza-1500w.jpeg" alt="Mağaza Görseli 1">
-       <!--  <img src="store-image2.jpg" alt="Mağaza Görseli 2"> -->
+        <img src="mioptik_magaza-1500w.jpeg" width="200" height="200" alt="Mağaza Görseli 1">
     </div>
 </section>
 
 <section id="contact">
-    <h2>İletişim Bilgisi</h2>
-    <div class="contact-info">
+    <div class="text-container">
+        <h2>İletişim Bilgisi</h2>
         <p><strong>Telefon:</strong> +90 505 317 53 00</p>
         <p><strong>Email:</strong>mioptiklens@gmail.com</p>
     </div>
     <div class="image-container">
-        <img src="store-image3.jpg" alt="Mağaza Görseli 3">
+        <img src="magaza2.jpeg" width="200" height="200"  alt="Mağaza Görseli 2">
     </div>
 </section>
 
 <section id="address">
-    <h2>Adres</h2>
-    <p>Bahçelievler Mah. Fevzi Çakmak Caddesi No:30/b
-        Bahçelievler/İstanbul</p>
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.831480720155!2d29.00880801578756!3d41.00497537930059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb0e00d01c07%3A0x1c8e987cdaba5a98!2sKad%C4%B1k%C3%B6y%2C%20Istanbul!5e0!3m2!1sen!2str!4v1697210356118!5m2!1sen!2str" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <div class="text-container">
+        <h2>Adres</h2>
+        <p>Atatürk Caddesi No:123, Kadıköy, İstanbul</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.831480720155!2d29.00880801578756!3d41.00497537930059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb0e00d01c07%3A0x1c8e987cdaba5a98!2sKad%C4%B1k%C3%B6y%2C%20Istanbul!5e0!3m2!1sen!2str!4v1697210356118!5m2!1sen!2str" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div class="image-container">
+        <img src="magaza3.jpeg" width="200" height="200"  alt="Mağaza Görseli 3">
+    </div>
 </section>
 
 <footer>
