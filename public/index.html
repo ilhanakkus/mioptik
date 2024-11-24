@@ -10,89 +10,97 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         header {
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
             background-color: #ff6600;
             color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header img {
-            max-width: 200px;
+            max-width: 180px;
+            margin-bottom: 20px;
         }
 
         section {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
             display: flex;
             align-items: center;
-            gap: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            flex-wrap: wrap; /* Küçük ekranlarda alt alta yerleşim */
+            gap: 40px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section:nth-child(even) {
+            flex-direction: row-reverse; /* Alternatif hizalama */
         }
 
         section h2 {
             color: #ff6600;
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         section p {
             margin: 10px 0;
-            font-size: 16px;
+            font-size: 18px;
+            color: #555;
         }
 
         .text-container {
             flex: 1;
-            min-width: 300px; /* Küçük ekranlar için minimum genişlik */
         }
 
         .image-container {
             flex: 1;
             display: flex;
             justify-content: center;
-            min-width: 300px; /* Küçük ekranlar için minimum genişlik */
         }
 
         .image-container img {
             max-width: 100%;
             height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         iframe {
             width: 100%;
             height: 300px;
             border: none;
+            border-radius: 10px;
             margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             text-align: center;
             background-color: #333;
             color: #fff;
-            padding: 15px 0;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 16px;
         }
 
-        /* Responsive Düzenleme */
+        /* Responsive Tasarım */
         @media (max-width: 768px) {
             section {
-                flex-direction: column; /* Küçük ekranlarda dikey yerleşim */
-                text-align: center;
+                flex-direction: column;
+                gap: 20px;
             }
 
-            .text-container, .image-container {
-                min-width: 100%;
+            section:nth-child(even) {
+                flex-direction: column;
             }
         }
     </style>
@@ -109,7 +117,7 @@
         <p>2001 yılından bu yana perakende sektöründe çeşitli alanlarda faaliyet gösteren ve elde ettiği başarılarla fark yaratan Mİ Optik’in kurucusu Optisyen Murat Bakır olarak, sizleri Mİ Optik’in ayrıcalıklı dünyasına davet ediyoruz. Mağazamızda sizleri, profesyonel ve deneyimli bir ekip karşılayacak. Geniş ürün yelpazemizle hizmet verirken, samimi bir ortamda rahat ve keyifli bir alışveriş deneyimi sunmayı hedefliyoruz. Uzmanlığımız ve yıllara dayanan tecrübemizle sizlere en iyi hizmeti sağlamak için buradayız.</p>
     </div>
     <div class="image-container">
-        <img src="mioptik_magaza-1500w.jpeg" width="200" height="200" alt="Mağaza Görseli 1">
+        <img src="mioptik_magaza-1500w.jpeg"  width="200" height="200"  alt="Mağaza Görseli 1">
     </div>
 </section>
 
@@ -117,7 +125,7 @@
     <div class="text-container">
         <h2>İletişim Bilgisi</h2>
         <p><strong>Telefon:</strong> +90 505 317 53 00</p>
-        <p><strong>Email:</strong>mioptiklens@gmail.com</p>
+        <p><strong>Email:</strong> mioptiklens@gmail.com</p>
     </div>
     <div class="image-container">
         <img src="magaza2.jpeg" width="200" height="200" alt="Mağaza Görseli 2">
@@ -129,10 +137,10 @@
         <h2>Adres</h2>
         <p>Bahçelievler Mah. Fevzi Çakmak Caddesi No:30/b
         Bahçelievler/İstanbul</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.070528820863!2d28.858247876817998!3d41.00182947135132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb4cc3899d87%3A0x1f2a1a29f2113304!2zQmFow6dlbGlldmxlciwgRmV2emkgw4dha21hayBDZC4gTm86MzAgRDpiLCAzNDE4MCBCYWjDp2VsaWV2bGVyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1732459947112!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.070528820863!2d28.858247876817998!3d41.00182947135132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb4cc3899d87%3A0x1f2a1a29f2113304!2zQmFow6dlbGlldmxlciwgRmV2emkgw4dha21hayBDZC4gTm86MzAgRDpiLCAzNDE4MCBCYWjDp2VsaWV2bGVyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1732459947112!5m2!1str!2str" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="image-container">
-        <img src="magaza3.jpeg" width="200" height="200" alt="Mağaza Görseli 3">
+        <img src="magaza3.jpeg"  width="200" height="200"  alt="Mağaza Görseli 3">
     </div>
 </section>
 
